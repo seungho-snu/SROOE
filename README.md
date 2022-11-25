@@ -17,5 +17,5 @@ Single-image super-resolution (SISR) networks trained with perceptual and advers
 - Python 3.8
 
 ### Visual and quantitative comparison. 
-<p align="center"><img src="figures/Fig1.PNG" width="800"></p>
+<p align="center"><img src="figures/Fig1.PNG" width="500"></p>
 The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-of-the-art methods, i.e, lower distortion and higher perceptual quality.
