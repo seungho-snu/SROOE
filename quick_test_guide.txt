@@ -1,0 +1,3 @@
+Quick start
+
+python test.py -opt options/test/test_SROOE_4x.yml
