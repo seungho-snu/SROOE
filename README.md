@@ -41,7 +41,7 @@ Visual comparison with state-of-the-art perception-driven SR methods
 
 ### Quantitative Evaluation
 
-<p align="center"><img src="figures/table02.png" width="800"></p>
+<p align="center"><img src="figures/table2.png" width="800"></p>
 
 # Citation
 
