@@ -37,11 +37,11 @@ The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-
 
 Visual comparison with state-of-the-art perception-driven SR methods
 
-<p align="center"><img src="figures/figure-01.png" width="800"></p>
+<p align="center"><img src="figures/figure-01.PNG" width="800"></p>
 
 ### Quantitative Evaluation
 
-<p align="center"><img src="figures/table2.png" width="800"></p>
+<p align="center"><img src="figures/table2.PNG" width="800"></p>
 
 # Citation
 
