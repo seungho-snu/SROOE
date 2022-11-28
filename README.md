@@ -21,3 +21,29 @@ Single-image super-resolution (SISR) networks trained with perceptual and advers
 ### Visual and quantitative comparison. 
 <p align="center"><img src="figures/Fig1.PNG" width="500"></p>
 The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-of-the-art methods, i.e, lower distortion and higher perceptual quality.
+
+### Quick usage on your data:
+You can choose any number [0, 1] for t.
+
+    python test.py -opt options/test/test_SROOE_4x.yml
+    
+### Test models
+
+- Download the pretrained SR 4x model from OneDrive <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>   
+- Download the pretrained OOE model from OneDrive <a href="https://www.dropbox.com/s/hoykbrpadzozlab/OOE.pth?dl=0">Link</a>   
+
+# Citation
+
+@misc{https://doi.org/10.48550/arxiv.2211.13676,
+  doi = {10.48550/ARXIV.2211.13676},
+  url = {https://arxiv.org/abs/2211.13676},
+  author = {Park, Seung Ho and Moon, Young Su and Cho, Nam Ik},
+  title = {Perception-Oriented Single Image Super-Resolution using Optimal Objective Estimation},
+  publisher = {arXiv},
+  year = {2022},  
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+# Acknowledgement
+Our work and implementations are inspired by and based on BasicSR <a href="https://github.com/xinntao/BasicSR">[site]</a> 
