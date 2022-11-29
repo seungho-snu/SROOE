@@ -7,7 +7,7 @@
 # SROOE
 
 # Perception-Oriented Single Image Super-Resolution using Optimal Objective Estimation
-paper <a href="https://arxiv.org/submit/4622017/view">Link</a>
+paper <a href="https://arxiv.org/pdf/2211.13676.pdf">Link</a>
 
 Seung Ho Park, Young Su Moon, Nam Ik Cho
 
