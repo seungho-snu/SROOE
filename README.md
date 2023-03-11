@@ -70,6 +70,15 @@ Visual comparison with state-of-the-art perception-driven SR methods
       year = {2022},  
       copyright = {arXiv.org perpetual, non-exclusive license}
     }
+    
+    @inproceedings{park2023srooe,
+      title={Perception-Oriented Single Image Super-Resolution using Optimal Objective Estimation},
+      author={Park, Seung Ho and Moon, Young Su and Cho, Nam Ik},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+      pages={},
+      year={2023}
+    }
+
 
 
 # Acknowledgement
