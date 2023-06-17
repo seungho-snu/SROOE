@@ -32,8 +32,8 @@ The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-
     
 ### Test models
 
-- Download the pretrained SR 4x model <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>   
-- Download the pretrained OOE model <a href="https://www.dropbox.com/s/hoykbrpadzozlab/OOE.pth?dl=0">Link</a>   
+- Before running this code, download the pretrained SR 4x model <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>   
+- Before running this code, download the pretrained OOE model <a href="https://www.dropbox.com/s/hoykbrpadzozlab/OOE.pth?dl=0">Link</a>   
 
 ### Training
 - The test and training codes for SROT model <a href="https://github.com/seungho-snu/SROT/blob/main/README.md">Link</a>
