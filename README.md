@@ -36,7 +36,7 @@ The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-
 
 ### Training
 - The test and training codes for SROT model <a href="https://github.com/seungho-snu/SROT/blob/main/README.md">Link</a>
-- The training codes for SROOE will be released soon.
+- The training codes for SROOE will be released by 18 June.
 
 ## Experimental Results
 
