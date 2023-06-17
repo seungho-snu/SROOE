@@ -36,7 +36,7 @@ The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-
 - Download the pretrained OOE model <a href="https://www.dropbox.com/s/hoykbrpadzozlab/OOE.pth?dl=0">Link</a>   
 
 ### Training
-- Training codes will be released before June 18th.
+- Training codes for SROT model <a href="https://github.com/seungho-snu/SROT/blob/main/README.md">Link</a>
 
 ## Experimental Results
 
