@@ -16,8 +16,9 @@ Seung Ho Park, Young Su Moon, Nam Ik Cho
 <p align="center"><img src="figures/network-architecture_v05.png" width="800"></p>
 
 ### Visual and quantitative comparison. 
-<p align="center"><img src="figures/Fig1.PNG" width="500"></p>
 The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-of-the-art methods, i.e, lower distortion and higher perceptual quality.
+<p align="center"><img src="figures/Fig1.PNG" width="500"></p>
+
 
 ## Usage:
 
