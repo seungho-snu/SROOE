@@ -28,6 +28,8 @@ The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-
 
 ### Test
 
+To test pretrained ESRGAN-SROT model:
+
     python test.py -opt options/test/test_SROOE_4x.yml
     
 - Before running this code, download the pretrained SR 4x model (SROT) <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>   
