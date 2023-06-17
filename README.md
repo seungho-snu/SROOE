@@ -26,7 +26,7 @@ The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-
 - Pytorch 1.10.0
 - CUDA 11.3
 - Python 3.8
-- 
+
 ### Quick usage on your data:
 
     python test.py -opt options/test/test_SROOE_4x.yml
