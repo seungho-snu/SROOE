@@ -14,7 +14,7 @@ Seung Ho Park, Young Su Moon, Nam Ik Cho
 
 <p align="center"><img src="figures/network-architecture_v05.png" width="800"></p>
 
-## SROOE Training
+## SROOE Generator Training
 
 <p align="center"><img src="figures/conditional model training - sort.png" width="800"></p>
 
