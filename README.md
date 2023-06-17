@@ -36,7 +36,7 @@ To test pretrained ESRGAN-SROT model:
 
     python test.py -opt options/test/test_SROOE_4x.yml
     
-- Before running this code, download the pretrained SR 4x model (SROT) <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a> and the pretrained OOE model <a href="https://www.dropbox.com/s/hoykbrpadzozlab/OOE.pth?dl=0">Link</a>   
+- Before running the test code, download the pretrained SR 4x model (SROT) <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a> and the pretrained OOE model <a href="https://www.dropbox.com/s/hoykbrpadzozlab/OOE.pth?dl=0">Link</a>   
 
 ### Training
 - The test and training codes for SROT model <a href="https://github.com/seungho-snu/SROT/blob/main/README.md">Link</a>
