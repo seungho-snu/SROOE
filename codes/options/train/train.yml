@@ -1,0 +1,96 @@
+#### general settings
+name: SROOE-UNet-M1234-v2
+use_tb_logger: true
+model: srgan
+distortion: sr
+scale: 4
+gpu_ids: [0]
+
+#### datasets
+datasets:
+  train:  # the 1st test dataset
+    name: DF2K
+    mode: LQGT
+    dataroot_GT: F:\tempE\dataset\Flickr2K_DIV2K_HR_sub
+    dataroot_LQ: F:\tempE\dataset\Flickr2K_DIV2K_train_LR_bicubic\X4_sub_120
+    dataroot_T_OOS_map: E:\util\FxSR-PD-LPIPS_21BC_train_best_idx_DF2K_dn_sub
+
+    use_shuffle: true
+    n_workers: 6  # per GPU
+    batch_size: 8
+    GT_size: 256
+    use_flip: true
+    use_rot: true
+    color: RGB
+  val:
+    name: DIV2K_val_Q100
+    mode: LQGT
+    dataroot_GT: E:\exp\dataset\DIV2K_valid_HR
+    dataroot_LQ: E:\exp\dataset\DIV2K_valid_LR_bicubic\X4
+
+#### network structures
+network_G:
+  which_model_G: RRDBNet
+  in_nc: 4
+  out_nc: 3
+  nf: 64
+  nb: 23
+network_C:
+  which_model_C: UNet
+  in_nc: 1475
+  out_nc: 1
+  nf: 64
+  nb: 16
+network_D:
+  which_model_D: discriminator_vgg_128
+  in_nc: 3
+  nf: 64
+
+
+#### path
+path:
+  pretrain_model_G: E:\github\SROOE\pretrained\ESRGAN-SROT-M1234-v2-4x.pth
+  pretrain_model_C: ~
+#  strict_load_C: true
+#  resume_state_C: ~
+
+#### training settings: learning rate scheme, loss
+train:
+  lr_G: !!float 1e-4
+  weight_decay_G: 0
+  beta1_G: 0.9
+  beta2_G: 0.99
+
+  lr_C: !!float 1e-4
+  weight_decay_C: 0
+  beta1_C: 0.9
+  beta2_C: 0.99
+
+  lr_D: !!float 1e-4
+  weight_decay_D: 0
+  beta1_D: 0.9
+  beta2_D: 0.99
+  lr_scheme: MultiStepLR
+
+  niter: 400000
+  warmup_iter: -1  # no warm up
+  lr_steps: [50000, 100000, 200000, 300000]
+  lr_gamma: 0.5
+
+  pixel_criterion: l1
+  pixel_weight: !!float 1e-2
+  feature_criterion: l1
+  feature_weight: 1
+  gan_type: ragan  # gan | ragan
+  gan_weight: !!float 5e-3
+
+  D_update_ratio: 1
+  D_init_iters: 0
+
+  manual_seed: 10
+  val_freq: !!float 5e3
+
+#### logger
+logger:
+  print_freq: 100
+  save_checkpoint_freq: !!float 5e3

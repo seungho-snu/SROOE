@@ -1,0 +1,38 @@
+name: SROOE
+suffix: ~  # add suffix to saved images
+model: srgan
+distortion: sr
+scale: 4
+gpu_ids: [0]
+
+#### network structures
+network_G:
+  which_model_G: RRDBNet
+  in_nc: 4
+  out_nc: 3
+  nf: 64
+  nb: 23
+  upscale: 4
+
+network_C:
+  which_model_C: UNet
+  in_nc: 1475
+  out_nc: 1
+  nf: 64
+  nb: 16
+
+datasets:
+  test_1:
+    name: Set5
+    mode: LQ
+    dataroot_LQ: E:\exp\dataset\SR_testing_datasets_crop_x4\Set5_LRx4
+  test_100:
+    name: DIV2K_val_Q100
+    mode: LQ
+    dataroot_LQ: E:\exp\dataset\DIV2K_valid_LR_bicubic\X4
+
+path:
+  pretrain_model_G: E:\github\SROOE\pretrained\ESRGAN-SROT-M1234-v2-4x.pth
+  pretrain_model_C: E:\github\SROOE\pretrained\OOE.pth
+
+
