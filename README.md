@@ -14,9 +14,13 @@ Seung Ho Park, Young Su Moon, Nam Ik Cho
 
 <p align="center"><img src="figures/network-architecture_v05.png" width="800"></p>
 
-## SROT (the generative SR model) Training <a href="https://github.com/seungho-snu/SROT">Link</a>
+## SROT (SR model trained with an Objective Trajectory) Training <a href="https://github.com/seungho-snu/SROT">Link</a>
 
 <p align="center"><img src="figures/conditional model training - sort.png" width="800"></p>
+
+## OOE (Optimal Objective Estimation) Training <a href="https://github.com/seungho-snu/SROT">Link</a>
+
+<p align="center"><img src="figures/OOE_training.png" width="800"></p>
 
 ### Visual and quantitative comparison. 
 The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-of-the-art methods, i.e, lower distortion and higher perceptual quality.
