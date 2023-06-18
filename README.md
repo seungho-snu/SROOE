@@ -40,9 +40,9 @@ To test the pretrained ESRGAN-SROT model:
 
 ### Training
 
-1) First, SROT Traning Phase and Preparing Traininig pairs using the SROT code.
+Before running the trainig code, you need to prepare the training pairs of LR images and corresponding T_OOS_Maps. 
 
-You need to train SROT model <a href="https://github.com/seungho-snu/SROT">Link</a>, or you use the pretrained SROT model <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>.
+For this, you first need to train SROT model <a href="https://github.com/seungho-snu/SROT">Link</a>, or you can use the pretrained SROT model <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>.
 
 After finish the SROT model training,
 
@@ -65,6 +65,7 @@ Then, generate SROT results with different t values from 0 to 1 with 0.05 step a
     
 After running command lines above, you will get the folder structure as follows:   
 
+    SROT
     ├── codes
     ├── LPIPS-Map-Gen
     ├── figures
@@ -88,14 +89,15 @@ To generate LPIPS maps, use the following command line. lpips_measure.py is in t
     
 for example
     
-    python lpips_measure.py path_to_GT\DIV2K_train_HR path_to_SROOE\SROT-main\results\ESRGAN-SROT-M1234-v2-4x_t000\DIV2K_train_HR
-    python lpips_measure.py path_to_GT\DIV2K_train_HR path_to_SROOE\SROT-main\results\ESRGAN-SROT-M1234-v2-4x_t005\DIV2K_train_HR
+    python lpips_measure.py path_to_GT\DIV2K_train_HR path_to_SROT\SROT-main\results\ESRGAN-SROT-M1234-v2-4x_t000\DIV2K_train_HR
+    python lpips_measure.py path_to_GT\DIV2K_train_HR path_to_SROT\SROT-main\results\ESRGAN-SROT-M1234-v2-4x_t005\DIV2K_train_HR
     ...
-    python lpips_measure.py path_to_GT\DIV2K_train_HR path_to_SROOE\SROT-main\results\ESRGAN-SROT-M1234-v2-4x_t095\DIV2K_train_HR
-    python lpips_measure.py path_to_GT\DIV2K_train_HR path_to_SROOE\SROT-main\results\ESRGAN-SROT-M1234-v2-4x_t100\DIV2K_train_HR
+    python lpips_measure.py path_to_GT\DIV2K_train_HR path_to_SROT\SROT-main\results\ESRGAN-SROT-M1234-v2-4x_t095\DIV2K_train_HR
+    python lpips_measure.py path_to_GT\DIV2K_train_HR path_to_SROT\SROT-main\results\ESRGAN-SROT-M1234-v2-4x_t100\DIV2K_train_HR
     
-After running command lines above, you will get the folder structure as followings
+After running command lines above, you will get the folder structure as follows:
 
+    SROT
     ├── codes
     ├── LPIPS-Map-Gen
     ├── figures
@@ -115,19 +117,39 @@ After running command lines above, you will get the folder structure as followin
                 ├──> DIV2K_train_HR    
                 └──> DIV2K_train_HR_LPIPS
     
-(3) Generate T_OOS_Maps for each images. To generate T_OOS_Maps, use the following command line. generate_T_OOS_Map.py is in the LPIPS-Map-Gen folder.
+(3) Generate T_OOS_Maps for each images. To generate T_OOS_Maps, use the following command lines. generate_T_OOS_Map.py is in the LPIPS-Map-Gen folder.
 
-    python generate_T_OOS_Map.py ... to be continued...
+    python generate_T_OOS_Map.py path_to_GT\DIV2K_train_HR path_to_SROT\SROT-main\results\ESRGAN-SROT-M1234-v2-4x
    
-    .....
+After running command lines above, you will get the T_OOS_Maps in the T_OOS_Map folder and the folder structure as follows:
 
+    SROT
+    ├── codes
+    ├── LPIPS-Map-Gen
+        └──> T-OOS-MAP
+            └──> ESRGAN-SROT-M1234-v2-4x
+    ├── figures
+    ├── pretrained
+    └── retuls: Pre-trained models are included (Model Zoo)
+        ├──> ESRGAN-SROT-M1234-v2-4x_t000
+                ├──> DIV2K_train_HR
+                └──> DIV2K_train_HR_LPIPS
+        ├──> ESRGAN-SROT-M1234-v2-4x_t005
+                ├──> DIV2K_train_HR
+                └──> DIV2K_train_HR_LPIPS
+        ├──> ...
+        ├──> ESRGAN-SROT-M1234-v2-4x_t095
+                ├──> DIV2K_train_HR
+                └──> DIV2K_train_HR_LPIPS
+        └──> ESRGAN-SROT-M1234-v2-4x_t100
+                ├──> DIV2K_train_HR    
+                └──> DIV2K_train_HR_LPIPS
+                
 
 (4) To train a SROOE model:
 
     python train.py -opt options/train/train.yml
     
-Before running the trainig code, prepare the training pairs of LR images and corresponding T_OOS_Maps. 
-
 
 ## Experimental Results
 
