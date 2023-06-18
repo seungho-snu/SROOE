@@ -119,7 +119,7 @@ After running command lines above, you will get the folder structure as follows:
     
 (3) Generate T_OOS_Maps for each images. To generate T_OOS_Maps, use the following command lines. generate_T_OOS_Map.py is in the LPIPS-Map-Gen folder.
 
-    python generate_T_OOS_Map.py path_to_GT\DIV2K_train_HR path_to_SROT\SROT-main\results\ESRGAN-SROT-M1234-v2-4x
+    python generate_T_OOS_Map.py -gt path_to_GT\DIV2K_train_HR -sr path_to_SROT\SROT-main\results\ESRGAN-SROT-M1234-v2-4x
    
 After running command lines above, you will get the T_OOS_Maps in the T_OOS_Map folder and the folder structure as follows:
 
