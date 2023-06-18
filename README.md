@@ -146,10 +146,11 @@ After running command lines above, you will get the T_OOS_Maps in the T_OOS_Map 
                 └──> DIV2K_train_HR_LPIPS
                 
 
-(4) To train a SROOE model:
+(4) To train a SROOE model using the SROOE codes in this webpage as follows:
 
     python train.py -opt options/train/train.yml
     
+ - Before running the command line above, set dataroot_T_OOS_map in the yml file as path_to_SROT/LPIPS-Map-Gen/T-OOS-MAP/ESRGAN-SROT-M1234-v2-4x
 
 ## Experimental Results
 
