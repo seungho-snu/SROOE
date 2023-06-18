@@ -52,7 +52,7 @@ After finishing the SROT model training,
       test_100:
         name: DIV2K_train_HR
         mode: LQ
-        dataroot_LQ: E:\exp\dataset\DIV2K_train_LRx4
+        dataroot_LQ: path_to_LR\DIV2K_train_LRx4
     
 Then, generate SROT results with different t values from 0 to 1 with 0.05 step as follows:   
 
