@@ -39,15 +39,14 @@ To test the pretrained ESRGAN-SROT model:
 - Before running the test code, download the pretrained SR 4x model (SROT) <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a> and the pretrained OOE model <a href="https://www.dropbox.com/s/hoykbrpadzozlab/OOE.pth?dl=0">Link</a>   
 
 ### Training
-First, you need to train SROT model <a href="https://github.com/seungho-snu/SROT">Link</a>, or you use the pretrained SROT model <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>.
 
-To train a SROOE model:
+1) First, SROT Traning Phase and Preparing Traininig pairs using the SROT code.
 
-    python train.py -opt options/train/train.yml
-    
-Before running the trainig code, prepare the training pairs of LR images and corresponding T_OOS_Maps. 
+You need to train SROT model <a href="https://github.com/seungho-snu/SROT">Link</a>, or you use the pretrained SROT model <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>.
 
-(1) Set the test.yml file as followings:
+After finish the SROT model training,
+
+(1) Set the test.yml file of SROT codes as follows:
 
     datasets:
       test_100:
@@ -123,6 +122,11 @@ After running command lines above, you will get the folder structure as followin
     .....
 
 
+(4) To train a SROOE model:
+
+    python train.py -opt options/train/train.yml
+    
+Before running the trainig code, prepare the training pairs of LR images and corresponding T_OOS_Maps. 
 
 
 ## Experimental Results
