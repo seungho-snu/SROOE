@@ -18,7 +18,7 @@ Seung Ho Park, Young Su Moon, Nam Ik Cho
 
 <p align="center"><img src="figures/conditional model training - sort.png" width="800"></p>
 
-## OOE (Optimal Objective Estimation) Training <a href="https://github.com/seungho-snu/SROT">Link</a>
+## OOE (Optimal Objective Estimation) Training
 
 <p align="center"><img src="figures/OOE_training.png" width="800"></p>
 
