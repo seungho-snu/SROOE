@@ -40,6 +40,7 @@ To test pretrained ESRGAN-SROT model:
 
 ### Training
 - The training codes for SROOE will be released by 18 June.
+- The training and test codes for SROT <a href="https://github.com/seungho-snu/SROT">Link</a>
 
 ## Experimental Results
 
