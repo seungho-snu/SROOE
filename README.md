@@ -177,16 +177,6 @@ Visual comparison with state-of-the-art perception-driven SR methods
 <p align="center"><img src="figures/figure-07.PNG" width="800"></p>
 
 # Citation
-
-    @misc{https://doi.org/10.48550/arxiv.2211.13676,
-      doi = {10.48550/ARXIV.2211.13676},
-      url = {https://arxiv.org/abs/2211.13676},
-      author = {Park, Seung Ho and Moon, Young Su and Cho, Nam Ik},
-      title = {Perception-Oriented Single Image Super-Resolution using Optimal Objective Estimation},
-      publisher = {arXiv},
-      year = {2022},  
-      copyright = {arXiv.org perpetual, non-exclusive license}
-    }
     
     @InProceedings{Park_2023_CVPR,
         author    = {Park, Seung Ho and Moon, Young Su and Cho, Nam Ik},
@@ -197,6 +187,15 @@ Visual comparison with state-of-the-art perception-driven SR methods
         pages     = {1725-1735}
     }
 
+    @misc{https://doi.org/10.48550/arxiv.2211.13676,
+      doi = {10.48550/ARXIV.2211.13676},
+      url = {https://arxiv.org/abs/2211.13676},
+      author = {Park, Seung Ho and Moon, Young Su and Cho, Nam Ik},
+      title = {Perception-Oriented Single Image Super-Resolution using Optimal Objective Estimation},
+      publisher = {arXiv},
+      year = {2022},  
+      copyright = {arXiv.org perpetual, non-exclusive license}
+    }
 
 
 # Acknowledgement
