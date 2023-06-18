@@ -54,7 +54,7 @@ After finishing the SROT model training,
         mode: LQ
         dataroot_LQ: path_to_LR\DIV2K_train_LRx4
     
-Then, generate SROT results with different t values from 0 to 1 with 0.05 step as follows:   
+Then, generate SROT results with different t values from 0 to 1 with 0.05 step using the SROT codes as follows:   
 
     python test.py -opt options/test/test.yml -t 0.00
     python test.py -opt options/test/test.yml -t 0.05
