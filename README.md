@@ -45,8 +45,9 @@ To train a SROOE model:
 
     python train.py -opt options/train/train.yml
     
-Before running the trainig code, prepare the training pairs. The example of uising the DIV2K dataset is
-(1) Generate SROT results with different t values. Set the test.yml file as followings:
+Before running the trainig code, prepare the training pairs of LR images and corresponding T_OOS_Maps. 
+
+(1) Set the test.yml file as followings:
 
 datasets:
   test_100:
@@ -54,7 +55,7 @@ datasets:
     mode: LQ
     dataroot_LQ: E:\exp\dataset\DIV2K_train_LRx4_mod4
     
-Then,    
+Then, generate SROT results with different t values from 0 to 1 with 0.05 step as follows:   
 
     python test.py -opt options/test/test.yml -t 0.00
     python test.py -opt options/test/test.yml -t 0.05
@@ -63,7 +64,7 @@ Then,
     python test.py -opt options/test/test.yml -t 0.95
     python test.py -opt options/test/test.yml -t 1.00
     
-After running command lines above, you will get the folder structure as followings
+After running command lines above, you will get the folder structure as follows:   
 
     ├── codes
     ├── LPIPS-Map-Gen
