@@ -66,8 +66,8 @@ Then, generate SROT results with different t values from 0 to 1 with 0.05 step u
 After running command lines above, you will get the folder structure as follows:   
 
     SROT
-    ├── codes
     ├── LPIPS-Map-Gen
+    ├── codes
     ├── figures
     ├── pretrained
     └── retuls: Pre-trained models are included (Model Zoo)
@@ -98,8 +98,8 @@ for example
 After running command lines above, you will get the folder structure as follows:
 
     SROT
-    ├── codes
     ├── LPIPS-Map-Gen
+    ├── codes
     ├── figures
     ├── pretrained
     └── retuls: Pre-trained models are included (Model Zoo)
@@ -124,10 +124,10 @@ After running command lines above, you will get the folder structure as follows:
 After running command lines above, you will get the T_OOS_Maps in the T_OOS_Map folder and the folder structure as follows:
 
     SROT
-    ├── codes
     ├── LPIPS-Map-Gen
         └──> T-OOS-MAP
             └──> ESRGAN-SROT-M1234-v2-4x
+    ├── codes
     ├── figures
     ├── pretrained
     └── retuls: Pre-trained models are included (Model Zoo)
