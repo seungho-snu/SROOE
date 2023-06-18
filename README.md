@@ -40,11 +40,11 @@ To test the pretrained ESRGAN-SROT model:
 
 ### Training
 
-Before running the trainig code, you need to prepare the training pairs of LR images and corresponding T_OOS_Maps. 
+Before running the trainig code, you need to prepare the training pairs of LR images and corresponding T_OOS_Maps using the SROT codes <a href="https://github.com/seungho-snu/SROT">Link</a>. 
 
 For this, you first need to train SROT model <a href="https://github.com/seungho-snu/SROT">Link</a>, or you can use the pretrained SROT model <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>.
 
-After finish the SROT model training,
+After finishing the SROT model training, 
 
 (1) Set the test.yml file of SROT codes as follows:
 
