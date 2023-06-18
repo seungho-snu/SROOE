@@ -49,11 +49,11 @@ Before running the trainig code, prepare the training pairs of LR images and cor
 
 (1) Set the test.yml file as followings:
 
-datasets:
-  test_100:
-    name: DIV2K_train_HR
-    mode: LQ
-    dataroot_LQ: E:\exp\dataset\DIV2K_train_LRx4_mod4
+    datasets:
+      test_100:
+        name: DIV2K_train_HR
+        mode: LQ
+        dataroot_LQ: E:\exp\dataset\DIV2K_train_LRx4_mod4
     
 Then, generate SROT results with different t values from 0 to 1 with 0.05 step as follows:   
 
