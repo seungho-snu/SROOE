@@ -46,7 +46,7 @@ For this, you first need to train SROT model <a href="https://github.com/seungho
 
 After finishing the SROT model training, 
 
-(1) Set the test.yml file of SROT codes as follows:
+(1) Modify the test.yml file of SROT codes as follows:
 
     datasets:
       test_100:
