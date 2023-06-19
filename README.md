@@ -23,7 +23,7 @@ Seung Ho Park, Young Su Moon, Nam Ik Cho
 <p align="center"><img src="figures/OOE_training.png" width="800"></p>
 
 ### Visual and quantitative comparison. 
-The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-of-the-art methods, i.e, lower distortion and higher perceptual quality.
+The proposed SROOE shows a higher PSNR, LRPSNR, and lower LPIPS than other state-of-the-art methods, i.e., lower distortion and higher perceptual quality.
 <p align="center"><img src="figures/Fig1.PNG" width="500"></p>
 
 
@@ -36,17 +36,17 @@ The proposed SROOE shows a higher PSNR, LRPSNR and lower LPIPS than other state-
 
 ### Test
 
-To test the pretrained ESRGAN-SROT model:
+To test the pre-trained ESRGAN-SROT model:
 
     python test.py -opt options/test/test.yml
     
-- Before running the test code, download the pretrained SR 4x model (SROT) <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a> and the pretrained OOE model <a href="https://www.dropbox.com/s/hoykbrpadzozlab/OOE.pth?dl=0">Link</a>   
+- Before running the test code, download the pre-trained SR 4x model (SROT) <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a> and the pre-trained OOE model <a href="https://www.dropbox.com/s/hoykbrpadzozlab/OOE.pth?dl=0">Link</a>   
 
 ### Training
 
-Before running the trainig code, you need to prepare the training pairs of LR images and corresponding T_OOS_Maps using the SROT codes <a href="https://github.com/seungho-snu/SROT">Link</a>. 
+Before running the training code, you need to prepare the training pairs of LR images and corresponding T_OOS_Maps using the SROT codes <a href="https://github.com/seungho-snu/SROT">Link</a>. 
 
-For this, you first need to train SROT model <a href="https://github.com/seungho-snu/SROT">Link</a>, or you can use the pretrained SROT model <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>.
+For this, you first need to train the SROT model <a href="https://github.com/seungho-snu/SROT">Link</a>, or you can use the pre-trained SROT model <a href="https://www.dropbox.com/s/v7lx9qoji1ndonx/SR.pth?dl=0">Link</a>.
 
 After finishing the SROT model training, 
 
