@@ -74,7 +74,7 @@ After running command lines above, you will get the folder structure as follows:
     ├── codes
     ├── figures
     ├── pretrained
-    └── retuls: Pre-trained models are included (Model Zoo)
+    └── retuls
         ├──> ESRGAN-SROT-M1234-v2-4x_t000
                 └──> DIV2K_train_HR
         ├──> ESRGAN-SROT-M1234-v2-4x_t005
@@ -106,7 +106,7 @@ After running command lines above, you will get the folder structure as follows:
     ├── codes
     ├── figures
     ├── pretrained
-    └── retuls: Pre-trained models are included (Model Zoo)
+    └── retuls
         ├──> ESRGAN-SROT-M1234-v2-4x_t000
                 ├──> DIV2K_train_HR
                 └──> DIV2K_train_HR_LPIPS
@@ -134,7 +134,7 @@ After running command lines above, you will get the T_OOS_Maps in the T_OOS_Map 
     ├── codes
     ├── figures
     ├── pretrained
-    └── retuls: Pre-trained models are included (Model Zoo)
+    └── retuls
         ├──> ESRGAN-SROT-M1234-v2-4x_t000
                 ├──> DIV2K_train_HR
                 └──> DIV2K_train_HR_LPIPS
