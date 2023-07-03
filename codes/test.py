@@ -25,6 +25,7 @@ def esrgan():
     opt['name'] = opt['name'] + '_t' + T_ctrl_str
     opt['path']['results_root'] = opt['path']['results_root'] + '_t' + T_ctrl_str
     opt['path']['log'] = opt['path']['log'] + '_t' + T_ctrl_str
+    opt['T_ctrl'] = opt.T_ctrl
 
     util.mkdirs(
         (path for key, path in opt['path'].items()
