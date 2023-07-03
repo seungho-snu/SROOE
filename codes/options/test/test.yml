@@ -32,7 +32,7 @@ datasets:
     dataroot_LQ: E:\exp\dataset\DIV2K_valid_LR_bicubic\X4
 
 path:
-  pretrain_model_G: E:\github\SROOE\pretrained\ESRGAN-SROT-M1234-v2-4x.pth
+  pretrain_model_G: E:\github\SROOE\pretrained\SR.pth
   pretrain_model_C: E:\github\SROOE\pretrained\OOE.pth
 
 
